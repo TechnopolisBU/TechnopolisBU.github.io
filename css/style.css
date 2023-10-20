@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: serif;
     background-image: url("../docs/assets/background.png");
-    background-attatchment: fixed;
+    background-attachment: fixed;
     background-position: center;
-    bacground-size: cover;
+    background-size: cover;
 }
 
 .hero {
