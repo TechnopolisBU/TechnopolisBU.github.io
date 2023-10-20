@@ -6,6 +6,9 @@ body {
 
 
 .hero {
-    background-color: #7796CB; 
-    color: blue;
+    width: 100%;
+    height:100vh;
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-position: center;
 }
