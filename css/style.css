@@ -9,7 +9,7 @@ body {
 
 @font-face {
     font-family: tech_title_font;
-    src: url("..docs/assets/Bodoni 72 Smallcaps Book.ttf"); 
+    src: url("..docs/assets/Bodoni 72 Smallcaps Book.ttf") format('truetype'); 
   }
 
 h1 {
