@@ -24,3 +24,67 @@ h1 {
     top: 40px;
 }
 
+h2 {
+    font-family: tech_title_font;
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    top: 60px;
+}
+
+h3 { 
+    font-family: serif;
+    font-size: 25px;
+    position: relative;
+
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.article_block {
+    overflow: hidden;
+    background-color: white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
+    top: +500px;
+
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
