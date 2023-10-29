@@ -14,11 +14,11 @@ body {
 @font-face {
     font-family: "tech_title_font";
     src: url("/docs/assets/Bodoni72SmallcapsBook.ttf") format('truetype'); 
+    font-weight: normal;
   }
 
 h1 {
     font-family: tech_title_font;
-    font-weight: normal;
     text-align: center;
     font-size: 100px;
     position: relative;
