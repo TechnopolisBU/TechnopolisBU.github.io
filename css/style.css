@@ -92,3 +92,46 @@ h3 {
     width: 50%;
 }
 
+.collapsible_article{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+
+    background:#333;
+    color:#ddd;
+    color:#ddd;
+    padding: 18px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.active, .collapsible:hover {
+    background-color: #454545;
+  }
+
+.article_content {
+    overflow: hidden;
+    display: none;
+    background-color: white;
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: -30px;
+
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
