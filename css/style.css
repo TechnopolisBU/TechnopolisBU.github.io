@@ -137,6 +137,7 @@ h3 {
   }
 
   .alignright {
-	float: right;
+    float: right;
+    padding-right: 5%;
 }
 
