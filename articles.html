@@ -164,8 +164,12 @@
     var articleElement = document.getElementById(articleId);
 
     if (articleElement) {
-        
-        articleElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      articleElement.classList.add('highlighted');
+      articleElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+       setTimeout(function () {
+            articleElement.classList.remove('highlighted');
+        }, 2000);
     }
 }
 
