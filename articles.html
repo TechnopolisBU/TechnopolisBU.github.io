@@ -10,12 +10,20 @@
 
 
 <div class="navbar">
-    <a href="index.html">Home</a>
+  <a href="index.html">Home</a>
     <a href="#articles">Articles</a>
-    <a href="#contact">Contact</a>
+    <a href="contact.html">Contact</a>
+  
+    <div class="search-container">
+    <input type="text" placeholder="Search.." id="searchInput" oninput="handleInput()">
+    <div id="searchResults"></div>
+    </div>  
 </div>
 
-<button type="button" class="collapsible_article">Morphowave Rollout Leaves The Student Body Confused</button>
+    
+<div class="content">
+    
+<button type="button" class="collapsible_article" id="Morphowave Rollout Leaves The Student Body Confused" >Morphowave Rollout Leaves The Student Body Confused</button>
 <div class="article_content">
     <img src="docs/assets/HoseArticleMorphowaveGraphic.png" alt="Hose Article Morphowave Graphic" class="center" > 
 
@@ -71,10 +79,56 @@
     <br>
     <br>
     <br>
+
+</div>
     
 </div>
 
 <script>
+      function handleInput() {
+            var searchInput = document.getElementById('searchInput');
+            var searchResults = document.getElementById('searchResults');
+            var content = document.getElementsByClassName('collapsible_article');
+            var searchText = searchInput.value.toLowerCase();
+
+            if (searchText === '') {
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            searchResults.innerHTML = '';
+
+            
+            for (var i = 0; i < content.length; i++) {
+                var articleId = content[i].id.toLowerCase();
+                
+                if (articleId.includes(searchText)) {
+                    
+                    var button = document.createElement('button');
+
+                    button.className = 'search-result-button';
+
+                    var buttonText = articleId.length > 20 ? articleId.substring(0, 20) + '...' : articleId;
+
+                    button.textContent = buttonText;
+                    button.onclick = goToArticle.bind(null, content[i].id);
+                    button.className = 'newbutton';
+
+                    searchResults.appendChild(button);
+                }
+            }
+        }
+
+    function goToArticle(articleId) {
+    var articleElement = document.getElementById(articleId);
+
+    if (articleElement) {
+        
+        articleElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
+
+    
     var coll = document.getElementsByClassName("collapsible_article");
     var i;
     
