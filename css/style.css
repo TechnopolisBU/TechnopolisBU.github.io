@@ -44,7 +44,7 @@ h3 {
 }
 
 .navbar {
-
+    
     background-color: #333;
     position: fixed;
     z-index: 2;
@@ -86,22 +86,21 @@ h3 {
     font-size: 16px;
     overflow: hidden;
     z-index: 3;
+    
 }
 
 .newbutton{
-    
     background-color: white;
     color: #333;
     font-family: serif;
-    
     display: block;
-    
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
     z-index: 3;
 }
+
 
 .article_block {
     overflow: hidden;
