@@ -66,6 +66,37 @@ h3 {
     color: black;
 }
 
+.navbar .search-container {
+    padding: 5px;
+    font-size: 16px;
+    float: right;
+    display: block;
+    overflow: hidden;
+}
+
+#searchInput{
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    overflow: hidden;
+    
+}
+
+.newbutton{
+    background-color: white;
+    color: #333;
+    font-family: serif;
+    
+    position: absolute;
+    display: block;
+   
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 3;
+}
+
 .article_block {
     overflow: hidden;
     background-color: white;
